@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cara</title>
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      id="header"
+      class="flex justify-start flex-col items-center bg-[#e3e6f6] w-full"
+    >
+      <!-- Navbar -->
+      <nav
+        class="flex justify-between items-center bg-[#e3e6f6] shadow-lg z-20 fixed top-0 left-0 w-full py-[20px] px-10 md:px-[5rem]"
+      >
+        <a href="#"><img src="./assets/logo (1).png" alt="logo" /></a>
+
+        <!-- NavLinks -->
+        <div>
+
+         
+          <ul id="nav"
+            class="flex flex-col justify-start items-start px-4 py-10 fixed top-0 right-0 h-[100svh] transition-all duration-600 ease transform translate-x-full w-[50%] shadow-sm bg-[#e3e6f6] 
+             md:justify-center md:flex-row md:h-[1rem] md:w-full md:translate-x-0 md:relative md:p-0 md:bg-none md:shadow-none list-none md:items-center gap-6 font-semibold text-[#1a1a1a] text-base"
+          >
+           <span id="close" class=" md:hidden"><i class=" fa-solid fa-circle-xmark text-gray-500 text-2xl hover:text-[#088178] transition  "></i></span>
+            <li class="li relative ">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="li relative"><a href="./shop.html">Shop</a></li>
+            <li class="li relative"><a class="active" href="blog.html">Blog</a></li>
+            <li class="li relative"><a href="about.html">About</a></li>
+            <li class="li relative"><a href="contact.html">Contact</a></li>
+            <li
+              class="relative hidden md:block text-gray-500 transition-all duration-400 ease active:text-[#088178] hover:text-[#088178]"
+            >
+              <a class="no-a" href="cart.html"
+                ><i class="fa-solid fa-bag-shopping "></i
+              ></a>
+            </li>
+          </ul>
+
+          <div class="flex md:hidden gap-4">
+            <li
+              class="list-none text-gray-500 transition-all duration-400 ease active:text-[#088178] hover:text-[#088178]"
+            >
+              <a class="no-a" href="cart.html"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+            </li>
+            <i id="open" class="fas fa-outdent"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- -->
+      <section
+        class="w-full mt-20 md:mt-15 px-[2rem] md:px-[5rem] pb-10 sm:pb-0 bg-center bg-cover flex justify-center bg-[url(./assets/banner/b19.jpg)] 
+        sm:h-[50svh] items-center flex-col text-white"
+      >
+        
+        <h2 class="h2">#readmore</h2>
+     
+        <p class="text-white">Read all case studies about our products!</p>
+        
+      </section>
+    </header>
+
+    <!-- Main-body -->
+    <main>
+
+      <section class="flex justify-center flex-col gap-10 items-center gap-1 px-[2rem] md:px-[5rem] text-white section-m1">
+       
+        <div class="flex flex-col justify-between gap-4 w-full md:flex-row items-start md:items-center sm:px-10 lg:px-20">
+
+          <div class="relative w-full md:w-1/2">
+            <div class="relative aspect-square w-[90%] h-[18.75rem] mt-15 z-10">
+              <img src="./assets/blog/b1.jpg" class="w-full h-full  bg-center bg-cover" alt="blog-img-1">
+            </div>
+            <h1 class="text-[4.37rem] absolute top-0  font-bold text-[#c9cbce]">13/01</h1>
+          </div>
+
+          <div class="flex flex-col text-[#041e42]">
+            <h4>The Cotton-Jersey Zip-Up Jersey</h4>
+            <p class="p">Kickstart man braid godard coloring book. <br>
+              Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard... </p>
+            <span class="flex justify-start items-center gap-4 group">
+              <a href="#" class="text-black font-bold text-sm transition-all duration-300 group-hover:text-[#088178]">
+              CONTINUE READING</a> 
+              <hr class="w-10 transition-all duration-300 group-hover:text-[#088178]">
+            </span>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between gap-4 w-full md:flex-row items-start md:items-center sm:px-10 lg:px-20">
+
+          <div class="relative w-full md:w-1/2">
+            <div class="relative aspect-square w-[90%] h-[18.75rem] mt-15 z-10">
+              <img src="./assets/blog/b2.jpg" class="w-full h-full  bg-center bg-cover" alt="blog-img-1">
+            </div>
+            <h1 class="text-[4.37rem] absolute top-0  font-bold text-[#c9cbce]">13/01</h1>
+          </div>
+
+          <div class="flex flex-col text-[#041e42]">
+            <h4>The Cotton-Jersey Zip-Up Jersey</h4>
+            <p class="p">Kickstart man braid godard coloring book. <br>
+              Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard... </p>
+            <span class="flex justify-start items-center gap-4 group">
+              <a href="#" class="text-black font-bold text-sm transition-all duration-300 group-hover:text-[#088178]">
+              CONTINUE READING</a> 
+              <hr class="w-10 transition-all duration-300 group-hover:text-[#088178]">
+            </span>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between gap-4 w-full md:flex-row items-start md:items-center sm:px-10 lg:px-20">
+
+          <div class="relative w-full md:w-1/2">
+            <div class="relative aspect-square w-[90%] h-[18.75rem] mt-15 z-10">
+              <img src="./assets/blog/b3.jpg" class="w-full h-full  bg-center bg-cover" alt="blog-img-1">
+            </div>
+            <h1 class="text-[4.37rem] absolute top-0  font-bold text-[#c9cbce]">13/01</h1>
+          </div>
+
+          <div class="flex flex-col text-[#041e42]">
+            <h4>The Cotton-Jersey Zip-Up Jersey</h4>
+            <p class="p">Kickstart man braid godard coloring book. <br>
+              Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard... </p>
+            <span class="flex justify-start items-center gap-4 group">
+              <a href="#" class="text-black font-bold text-sm transition-all duration-300 group-hover:text-[#088178]">
+              CONTINUE READING</a> 
+              <hr class="w-10 transition-all duration-300 group-hover:text-[#088178]">
+            </span>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between gap-4 w-full md:flex-row items-start md:items-center sm:px-10 lg:px-20">
+
+          <div class="relative w-full md:w-1/2">
+            <div class="relative aspect-square w-[90%] h-[18.75rem] mt-15 z-10">
+              <img src="./assets/blog/b4.jpg" class="w-full h-full  bg-center bg-cover" alt="blog-img-1">
+            </div>
+            <h1 class="text-[4.37rem] absolute top-0  font-bold text-[#c9cbce]">13/01</h1>
+          </div>
+
+          <div class="flex flex-col text-[#041e42]">
+            <h4>The Cotton-Jersey Zip-Up Jersey</h4>
+            <p class="p">Kickstart man braid godard coloring book. <br>
+              Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard... </p>
+            <span class="flex justify-start items-center gap-4 group">
+              <a href="#" class="text-black font-bold text-sm transition-all duration-300 group-hover:text-[#088178]">
+              CONTINUE READING</a> 
+              <hr class="w-10 transition-all duration-300 group-hover:text-[#088178]">
+            </span>
+          </div>
+        </div>
+
+         <div class="flex flex-col justify-between gap-4 w-full md:flex-row items-start md:items-center sm:px-10 lg:px-20">
+
+          <div class="relative w-full md:w-1/2">
+            <div class="relative aspect-square w-[90%] h-[18.75rem] mt-15 z-10">
+              <img src="./assets/blog/b5.jpg" class="w-full h-full  bg-center bg-cover" alt="blog-img-1">
+            </div>
+            <h1 class="text-[4.37rem] absolute top-0  font-bold text-[#c9cbce]">13/01</h1>
+          </div>
+
+          <div class="flex flex-col text-[#041e42]">
+            <h4>The Cotton-Jersey Zip-Up Jersey</h4>
+            <p class="p">Kickstart man braid godard coloring book. <br>
+              Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard... </p>
+            <span class="flex justify-start items-center gap-4 group">
+              <a href="#" class="text-black font-bold text-sm transition-all duration-300 group-hover:text-[#088178]">
+              CONTINUE READING</a> 
+              <hr class="w-10 transition-all duration-300 group-hover:text-[#088178]">
+            </span>
+          </div>
+        </div>
+
+         <div class="flex flex-col justify-between gap-4 w-full md:flex-row items-start md:items-center sm:px-10 lg:px-20">
+
+          <div class="relative w-full md:w-1/2">
+            <div class="relative aspect-square w-[90%] h-[18.75rem] mt-15 z-10">
+              <img src="./assets/blog/b6.jpg" class="w-full h-full  bg-center bg-cover" alt="blog-img-1">
+            </div>
+            <h1 class="text-[4.37rem] absolute top-0  font-bold text-[#c9cbce]">13/01</h1>
+          </div>
+
+          <div class="flex flex-col text-[#041e42]">
+            <h4>The Cotton-Jersey Zip-Up Jersey</h4>
+            <p class="p">Kickstart man braid godard coloring book. <br>
+              Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard... </p>
+            <span class="flex justify-start items-center gap-4 group">
+              <a href="#" class="text-black font-bold text-sm transition-all duration-300 group-hover:text-[#088178]">
+              CONTINUE READING</a> 
+              <hr class="w-10 transition-all duration-300 group-hover:text-[#088178]">
+            </span>
+          </div>
+        </div>
+
+      </section>
+
+            <!-- Pagination -->
+      <section class="flex justify-center items-center gap-1  px-[2rem] md:px-[5rem] text-white section-m1">
+        <a class="a rounded-sm px-5 py-2 " href="#">1</a>
+        <a class="a rounded-sm px-5 py-2 " href="#">2</a>
+        <a class="a rounded-sm px-5 py-3 text-base font-semibold" href="#"><i class="fas fa-arrow-right"></i></a>
+      </section>
+
+        <!-- Newsletters -->
+      <section
+        class="section-m1 md:section-p1 px-[2rem] gap-3 w-full py-10 flex flex-wrap justify-between items-center bg-[#041e42] bg-[url(./assets/banner/b14.png)] bg-cover bg-center bg-no-repeat"
+      >
+        <div class="flex flex-col items-between justify-center">
+          <h2 class="text-xl fontbold text-white">Sign Up For Newsletters</h2>
+          <p class="text-sm font-semibold text-[#818ea0]">
+            Get E-mail updates about our latest shop and
+            <span class="text-[#ffbd27]">special update</span>
+          </p>
+        </div>
+        <div class="flex items-star flex-col min-[310px]:flex-row gap-2 min-[310px]:gap-0 ">
+          <input
+            placeholder="Your email address"
+            type="text"
+            class="bg-white pl-[.75rem] sm:px-[1.875rem] py-[.98rem] text-sm border-1 outline-none border-transparent rounded-bl-sm rounded-tl-sm "
+          />
+          <button
+            class="b normal rounded-br-sm  rounded-tr-sm text-nowrap text-black bg-white hover:bg-[#088178] hover:text-white "
+          >
+            Sign up
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="md:section-p1 px-[2rem] flex flex-col gap-6 items-center justify-center text-gray-600"
+    >
+      <div class="flex flex-col gap-7 justify-start">
+        <img src="./assets/logo (1).png" class="w-[9rem]" alt="logo" />
+
+        <div
+          class="grid grid-cols-2 min-[430px]:grid-cols-3 lg:grid-cols-5 justify-between items-start gap-10 [&_h3]:font-bold [&_h3]:text-xl [&_li]:mb-2"
+        >
+          <div class="flex flex-col gap-6 w-full">
+            <h3>Contact</h3>
+            <ul class="[&_span]:font-semibold">
+              <li>
+                <span>Address:</span> 562 Wellington Road, Street 32, San
+                Francisco
+              </li>
+              <li><span>Phone:</span> +01 2222 362/(+91) 01 2345 6789</li>
+              <li><span>Hours:</span>10:00 - 18:00. Mon - Sat</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-6 [&_li]:hover:text-gray-400">
+            <h3>About</h3>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery Information</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-6 [&_li]:hover:text-gray-400">
+            <h3>My Account</h3>
+            <ul>
+              <li><a href="">Sign In</a></li>
+              <li><a href="">View Cart</a></li>
+              <li><a href="">My Wishlist</a></li>
+              <li><a href="">Track My Order</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <h3>Install App</h3>
+
+            <div class="w-full text-sm">
+              <p>For App Store or Google Play</p>
+              <ul
+                class="flex flex-wrap [&_img]:min-h-[3rem] [&_li]:border-1 [&_li]:border-gray-300 [&_li]:rounded-lg gap-2"
+              >
+                <li>
+                  <a href=""
+                    ><img src="./assets/pay/app.jpg" alt="app-store"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./assets/pay/play.jpg" alt="play-store"
+                  /></a>
+                </li>
+              </ul>
+              <p>Secure Payment Gateways</p>
+              <a href=""><img src="./assets/pay/pay.png" alt="payment" /></a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-6 [&_li]:hover:text-[#088178]">
+            <h3>Follow Us</h3>
+
+            <div class="flex gap-2 [&_i]:hover:text-[#088178] [&_i]:cursor-pointer text-gray-400">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>©2025 LibreWeb -HTML CSS Ecommerce Template</p>
+    </footer>
+  </body>
+  <script type="module" src="./script.js"></script>
+</html>

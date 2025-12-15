@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cara</title>
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      id="header"
+      class="flex justify-start flex-col items-center bg-[#e3e6f6] w-full"
+    >
+      <!-- Navbar -->
+      <nav
+        class="flex justify-between items-center bg-[#e3e6f6] shadow-lg fixed top-0 left-0 w-full py-[20px] px-10 md:px-[5rem]"
+      >
+        <a href="#"><img src="./assets/logo (1).png" alt="logo" /></a>
+
+        <!-- NavLinks -->
+        <div>
+
+         
+          <ul id="nav"
+            class="flex flex-col justify-start items-start px-4 py-10 fixed top-0 right-0 h-[100svh] transition-all duration-600 ease transform translate-x-full w-[50%] shadow-sm bg-[#e3e6f6] 
+             md:justify-center md:flex-row md:h-[1rem] md:w-full md:translate-x-0 md:relative md:p-0 md:bg-none md:shadow-none list-none md:items-center gap-6 font-semibold text-[#1a1a1a] text-base"
+          >
+           <span id="close" class=" md:hidden"><i class=" fa-solid fa-circle-xmark text-gray-500 text-2xl hover:text-[#088178] transition  "></i></span>
+            <li class="li relative ">
+              <a class="active" href="index.html">Home</a>
+            </li>
+            <li class="li relative"><a href="./shop.html">Shop</a></li>
+            <li class="li relative"><a href="blog.html">Blog</a></li>
+            <li class="li relative"><a href="about.html">About</a></li>
+            <li class="li relative"><a href="contact.html">Contact</a></li>
+            <li
+              class="relative hidden md:block text-gray-500 transition-all duration-400 ease active:text-[#088178] hover:text-[#088178]"
+            >
+              <a class="no-a" href="cart.html"
+                ><i class="fa-solid fa-bag-shopping "></i
+              ></a>
+            </li>
+          </ul>
+
+          <div class="flex md:hidden gap-4">
+            <li
+              class="list-none text-gray-500 transition-all duration-400 ease active:text-[#088178] hover:text-[#088178]"
+            >
+              <a class="no-a" href="cart.html"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+            </li>
+            <i id="open" class="fas fa-outdent"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- -->
+      <section
+        class="w-full mt-20 md:mt-15 px-[2rem] md:px-[5rem] pb-10 sm:pb-0 bg-center bg-cover flex justify-center bg-[url(./assets/hero4.png)]  sm:h-[110svh] items-start flex-col"
+      >
+        <h4 class="pb-2 md:pb-9">Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1 class="h1 text-[#088178]">On all products</h1>
+        <p class="p">Save more with coupons and with 70% off</p>
+        <button
+          class="bg-transparent text-[#088178] border-0 bg-[url(./assets/button.png)] cursor-pointer px-20 py-3 bg-no-repeat font-bold text-base"
+        >
+          Shop now
+        </button>
+      </section>
+    </header>
+
+    <!-- Main-body -->
+    <main>
+
+      <!-- Features Section -->
+      <section
+        class="section-m1 md:section-p1 px-[2rem] flex justify-center items-center h-full"
+      >
+        <div class="flex flex-wrap justify-center items-center gap-2 lg:gap-4 h-full">
+          <div
+            class="flex flex-col items-center justify-between gap-2 py-4 px-2 shadow border-1 text-[#088178] rounded-lg border-[#cce7d0] hover:shadow-lg"
+          >
+            <img src="./assets/features/f1.png" alt="features-1" />
+            <h6 class="inline px-2 py-1 rounded bg-[#fddde4]">Free Shipping</h6>
+          </div>
+          <div
+            class="flex flex-col  items-center justify-between gap-2 py-4 px-2 shadow border-1 text-[#088178] rounded-lg border-[#cce7d0] hover:shadow-lg"
+          >
+            <img src="./assets/features/f1.png" alt="features-1" />
+            <h6 class="inline px-2 py-1 rounded bg-[#cdebbc]">Online Order</h6>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between gap-2 py-4 px-2 shadow border-1 text-[#088178] rounded-lg border-[#cce7d0] hover:shadow-lg"
+          >
+            <img src="./assets/features/f2.png" alt="features-1" />
+            <h6 class="inline px-2 py-1 rounded bg-[#d1e8f2]">Save Money</h6>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between gap-2 py-4 px-2 shadow border-1 text-[#088178] rounded-lg border-[#cce7d0] hover:shadow-lg"
+          >
+            <img src="./assets/features/f3.png" alt="features-1" />
+            <h6 class="inline px-2 py-1 rounded bg-[#cdd4f8]">Promotions</h6>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between gap-2 py-4 px-2 shadow border-1 text-[#088178] rounded-lg border-[#cce7d0] hover:shadow-lg"
+          >
+            <img src="./assets/features/f4.png" alt="features-1" />
+            <h6 class="inline px-2 py-1 rounded bg-[#f6dbf6]">Happy Sell</h6>
+          </div>
+          <div
+            class="flex flex-col items-center justify-between gap-2 py-4 px-2 shadow border-1 text-[#088178] rounded-lg border-[#cce7d0] hover:shadow-lg"
+          >
+            <img src="./assets/features/f5.png" alt="features-1" />
+            <h6 class="inline px-2 py-1 rounded bg-[#fff2e5]">F24/7 Support</h6>
+          </div>
+        </div>
+        <div></div>
+      </section>
+
+        <!-- Products 1 -->
+      <section
+        class="flex flex-col justify-center items-center gap-5 px-[2rem] md:px-[5rem] section-m1"
+      >
+        <div class="w-full text-center">
+          <h1 class="h1">Featured Product</h1>
+          <p class="p">Summer Collection New Modern Design</p>
+        </div>
+
+        <div class="grid grid-cols-1 min-[430px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:grid-rows-3 lg:grid-rows-2 w-full gap-4">
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/f1.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/f2.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/f3.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/f4.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/f5.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/f6.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/f7.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/f8.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accesories Banner -->
+      <section
+        class="section-m1 flex flex-col items-center justify-center text-white text-center gap-3 bg-[url(./assets/banner/b2.jpg)] h-full py-8 bg-cover bg-center"
+      >
+        <h4 class="text-base">Repair Services</h4>
+        <h2 class="text-[1.87rem]">
+          Up to <span class="text-[#ef3636]"> 70% off </span> - All t-Shirts &
+          Accessories
+        </h2>
+        <button
+          class="normal border-0 text-black bg-white hover:bg-[#088178] hover:text-white"
+        >
+          Explore More
+        </button>
+      </section>
+
+      <!-- Products 2 -->
+      <section
+        class="flex flex-col justify-center items-center gap-5 px-[2rem] md:px-[5rem] section-m1"
+      >
+        <div class="w-full text-center">
+          <h1 class="h1">New Arrivals</h1>
+          <p class="p">Summer Collection New Modern Design</p>
+        </div>
+
+        <div class="grid grid-cols-1 min-[430px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-3 lg:grid-rows-2 w-full gap-4">
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/n1.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/n2.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/n3.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/n4.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/n5.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/n6.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/n7.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-2 items-start gap-1 shadow hover:shadow-lg rounded-lg border-[#cce7d0] border-1"
+          >
+            <img
+              src="./assets/products/n8.jpg"
+              alt="product-1"
+              class="rounded-lg"
+            />
+            <div class="w-full">
+              <span class="text-[#606063] text-[12px]">adidas</span>
+              <h5 class="text-[14px] text-[#1a1a1a]">
+                Cartoon Astronaut T-Shirts
+              </h5>
+              <div class="w-full">
+                <span class="text-[.75rem] text-[#f3b519]">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+              </div>
+              <span class="flex justify-between items-center">
+                <h4 class="font-bold text-[.95rem] text-[#088178]">$74</h4>
+                <a
+                  class="rounded-full flex justify-center h-[40px] w-[40px] cursor-pointer border-1 border-[#cce7d0] font-semibold items-center hover:text-[#e8f6ea] bg-[#e8f6ea] hover:bg-[#088178] text-[#088178]"
+                  ref="#"
+                  ><i class="fa-brands fa-opencart"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- Advertisement -->
+      <section
+        class="grid grid-cols-6 grid-rows-1 px-[2rem] lg:px-[5rem] justify-center items-start gap-4"
+      >
+        <div
+          class="group col-span-6 md:col-span-3 flex flex-col justify-between min-h-[15.5rem] max-h-[20rem] py-20 px-10 items-start gap-2 text-white bg-center bg-cover bg-[url(./assets/banner/b17.jpg)]"
+        >
+          <h4 class="text-xl font-light">crazy details</h4>
+          <h2 class="text-3xl font-extrabold">buy 1 get 1 free</h2>
+          <span>The best classic dress is on sale at cara</span>
+          <button
+            class="group-hover:bg-[#088178] transition-all duration-600 outline-0 ease group-hover:border-[#088178] text-sm py-2 px-4 cursor-pointer bg-transparent border-1 border-white"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div
+          class="group col-span-6 md:col-span-3 flex flex-col justify-between min-h-[15.5rem] max-h-[20rem] py-20 px-10 items-start gap-2 text-white bg-center bg-cover bg-[url(./assets/banner/b10.jpg)]"
+        >
+          <h4 class="text-xl font-light">spring/summer</h4>
+          <h2 class="text-3xl font-extrabold">upcomming season</h2>
+          <span>The best classic dress is on sale at cara</span>
+          <button
+            class="group-hover:bg-[#088178] transition-all duration-600 outline-0 ease group-hover:border-[#088178] text-sm py-2 px-4 cursor-pointer bg-transparent border-1 border-white"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div
+          class="col-span-6 md:col-span-2 flex flex-col justify-center px-4 min-h-[150px] max-h-[200px] items-start gap-2 text-white bg-center bg-cover bg-[url(./assets/banner/b7.jpg)]"
+        >
+          <h2 class="text-xl font-black">SEASON SALE</h2>
+          <h3 class="text-base font-extrabold text-[#ef3636]">
+            Winter Collection - 50% off
+          </h3>
+        </div>
+
+        <div
+          class="col-span-6 md:col-span-2 flex flex-col justify-center px-4 min-h-[150px] max-h-[200px] items-start gap-2 text-white bg-center bg-cover bg-[url(./assets/banner/b4.jpg)]"
+        >
+          <h2 class="text-xl font-black">NEW FOOTWEAR COLLECTION</h2>
+          <h3 class="text-base font-extrabold text-[#ef3636]">
+            Spring/Summer 2025
+          </h3>
+        </div>
+
+        <div
+          class="col-span-6 md:col-span-2 flex flex-col justify-center px-4 min-h-[150px] max-h-[200px] items-start gap-2 text-white bg-center bg-cover bg-[url(./assets/banner/b18.jpg)]"
+        >
+          <h2 class="text-xl font-black">T-SHIRTS</h2>
+          <h3 class="text-base font-extrabold text-white">New Trendy Prints</h3>
+        </div>
+      </section>
+
+        <!-- Newsletters -->
+      <section
+        class="section-m1 md:section-p1 px-[2rem] gap-3 w-full py-10 flex flex-wrap justify-between items-center bg-[#041e42] bg-[url(./assets/banner/b14.png)] bg-cover bg-center bg-no-repeat"
+      >
+        <div class="flex flex-col items-between justify-center">
+          <h2 class="text-xl fontbold text-white">Sign Up For Newsletters</h2>
+          <p class="text-sm font-semibold text-[#818ea0]">
+            Get E-mail updates about our latest shop and
+            <span class="text-[#ffbd27]">special update</span>
+          </p>
+        </div>
+        <div class="flex items-star flex-col min-[310px]:flex-row gap-2 min-[310px]:gap-0 ">
+          <input
+            placeholder="Your email address"
+            type="text"
+            class="bg-white pl-[.75rem] sm:px-[1.875rem] py-[.98rem] text-sm border-1 outline-none border-transparent rounded-bl-sm rounded-tl-sm "
+          />
+          <button
+            class="b normal rounded-br-sm  rounded-tr-sm text-nowrap text-black bg-white hover:bg-[#088178] hover:text-white"
+          >
+            Sign up
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="md:section-p1 px-[2rem] flex flex-col gap-6 items-center justify-center text-gray-600"
+    >
+      <div class="flex flex-col gap-7 justify-start">
+        <img src="./assets/logo (1).png" class="w-[9rem]" alt="logo" />
+
+        <div
+          class="grid grid-cols-2 min-[430px]:grid-cols-3 lg:grid-cols-5 justify-between items-start gap-10 [&_h3]:font-bold [&_h3]:text-xl [&_li]:mb-2"
+        >
+          <div class="flex flex-col gap-6 w-full">
+            <h3>Contact</h3>
+            <ul class="[&_span]:font-semibold">
+              <li>
+                <span>Address:</span> 562 Wellington Road, Street 32, San
+                Francisco
+              </li>
+              <li><span>Phone:</span> +01 2222 362/(+91) 01 2345 6789</li>
+              <li><span>Hours:</span>10:00 - 18:00. Mon - Sat</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-6 [&_li]:hover:text-gray-400">
+            <h3>About</h3>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Delivery Information</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-6 [&_li]:hover:text-gray-400">
+            <h3>My Account</h3>
+            <ul>
+              <li><a href="">Sign In</a></li>
+              <li><a href="">View Cart</a></li>
+              <li><a href="">My Wishlist</a></li>
+              <li><a href="">Track My Order</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <h3>Install App</h3>
+
+            <div class="w-full text-sm">
+              <p>For App Store or Google Play</p>
+              <ul
+                class="flex flex-wrap [&_img]:min-h-[3rem] [&_li]:border-1 [&_li]:border-gray-300 [&_li]:rounded-lg gap-2"
+              >
+                <li>
+                  <a href=""
+                    ><img src="./assets/pay/app.jpg" alt="app-store"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./assets/pay/play.jpg" alt="play-store"
+                  /></a>
+                </li>
+              </ul>
+              <p>Secure Payment Gateways</p>
+              <a href=""><img src="./assets/pay/pay.png" alt="payment" /></a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-6 [&_li]:hover:text-[#088178]">
+            <h3>Follow Us</h3>
+
+            <div class="flex gap-2 [&_i]:hover:text-[#088178] [&_i]:cursor-pointer text-gray-400">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p>©2025 LibreWeb -HTML CSS Ecommerce Template</p>
+    </footer>
+  </body>
+  <script type="module" src="./script.js"></script>
+</html>
